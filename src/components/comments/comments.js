@@ -1,10 +1,9 @@
-import './comments.css'
+import './comments.css';
 import {useEffect, useState} from "react";
 import Comment from "./comment/comment";
 
 export default function Comments(){
-
-    let[commentsList, setCommentsList] = useState([]);
+    const [commentsList, setCommentsList] = useState([]);
 
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/comments')

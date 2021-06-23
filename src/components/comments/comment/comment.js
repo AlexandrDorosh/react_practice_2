@@ -1,4 +1,4 @@
-import './comment.css'
+import './comment.css';
 
 export default function Comment({items}){
     let{postId, id, name, email, body} = items;
